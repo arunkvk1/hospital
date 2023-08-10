@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View doctor</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th>Doctor_id</th>
+        <th>Name</th>
+        <th>Specialization</th>
+        <th>Joining_date</th>
+        <th>Salary</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </thead>
+      <tbody>
+        {% for x1 in x %}
+        <tr>
+          <td>{{ x1.Emp_id }}</td>
+          <td>{{ x1.Doctor }}</td>
+          <td>{{ x1.Specialization }}</td>
+          <td>{{ x1.Salary }}</td>
+          <td>{{ x1.Age }}</td>
+          <td>{{ x1.Gender }}</td>
+
+          <td><a href="/deletedoctor/{{x1.id}}">delete</a></td>
+          <!-- <td><a href="/updatedoctor/{{x1.id}}">update</a></td> -->
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -20,5 +20,9 @@ from app1 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.index),
-    path("admin/",views.admin),
+    path("admin1/",views.admin1),
+    path("adddoctor/",views.adddoctor),
+    path("doct/",views.doct),
+    path("viewdoctor/",views.viewdoctor),
+    path('deletedoctor/<int:id>',views.deletedoctor),
 ]
