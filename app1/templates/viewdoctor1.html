@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Doctor_id</th>
+            <th>Doctor</th>
+            <th>Specialization</th>
+            <th>Salary</th>
+            <th>Experience</th>
+            <th>Age</th>
+            <th>Gender</th>
+          </thead>
+          <tbody>
+            {% for y1 in y %}
+            <tr>
+              <td>{{ y1.Emp_id }}</td>
+              <td>{{ y1.Doctor }}</td>
+              <td>{{ y1.Specialization }}</td>
+              <td>{{ y1.Salary }}</td>
+              <td>{{ y1.Experience }}</td>
+              <td>{{ y1.Age }}</td>
+              <td>{{ y1.Gender }}</td>
+    
+            </tr>
+            {% endfor %}
+    </table>
+</body>
+</html>

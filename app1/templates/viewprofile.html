@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update profile</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Gender</th>
+        </thead>
+        <tbody>
+            {% for x1 in x %}
+            <tr>
+                <td>{{ x1.name }}</td>
+                <td>{{ x1.age }}</td>
+                <td>{{ x1.phone }}</td>
+                <td>{{ x1.email }}</td>
+                <td>{{ x1.date }}</td>
+                <td>{{ x1.gender }}</td>
+                <td><a href="/updatepro/{{x1.id}}">Update</a></td>
+                <td><a href="/deletepro/{{x1.id}}">Delete</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -21,8 +21,17 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.index),
     path("admin1/",views.admin1),
+    path('pat/',views.patient),
     path("adddoctor/",views.adddoctor),
     path("doct/",views.doct),
     path("viewdoctor/",views.viewdoctor),
     path('deletedoctor/<int:id>',views.deletedoctor),
+    path('addpatient/',views.addpatient),
+    path('link1/',views.link1),
+    path('viewdoctor1/',views.viewdoctor1),
+    path('viewpro/',views.viewprofile),
+    path('updatepro/<int:id>',views.updateprofile),
+    path('link2/<int:id>',views.link2),
+    path('deletepro/<int:id>',views.deleteprofile)
+    
 ]

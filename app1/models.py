@@ -11,3 +11,15 @@ class tbl_hospital(models.Model):
     Gender=models.CharField(max_length=100)
     class Meta:
         db_table="tbl_hospital"
+
+
+class tbl_patient(models.Model):
+    name=models.CharField(max_length=50)
+    age=models.IntegerField()
+    phone=models.IntegerField()
+    email=models.CharField(max_length=50)
+    date=models.DateField(max_length=30)
+    gender=models.CharField(max_length=50)
+
+    class Meta:
+        db_table = "tbl_patient"
